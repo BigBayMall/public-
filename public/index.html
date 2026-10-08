@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>FocalCut | Premium Short-Form Video Editing & Retention Agency</title>
+<meta name="description" content="FocalCut turns raw footage into retention-engineered short-form video. One-time packages of 4, 10 or 15 edits. 24–48h first-draft turnaround. Secure Stripe checkout.">
+<meta name="keywords" content="short form video editing agency, tiktok video editor, reels editing service, youtube shorts editor, retention editing, hook optimization, video editing packages">
+<meta name="author" content="Big Bay Mall LLC">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://focalcut.com/">
+<meta name="theme-color" content="#0A0A0A">
+
+<meta property="og:site_name" content="FocalCut">
+<meta property="og:title" content="FocalCut | Premium Short-Form Video Editing">
+<meta property="og:description" content="One-time video editing packages. Retention-engineered hooks, pacing, captions and sound. 24–48h first-draft turnaround.">
+<meta property="og:url" content="https://focalcut.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FocalCut | Premium Short-Form Video Editing">
+<meta name="twitter:description" content="One-time video editing packages with 24–48h first-draft turnaround.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg-primary:#0A0A0A; --bg-surface:#121212; --bg-elevated:#1A1A1A;
+    --border-default:rgba(255,255,255,0.05); --border-focus:#A3E635;
+    --text-primary:#FAFAFA; --text-secondary:#A3A3A3; --text-muted:#737373;
+    --accent-primary:#A3E635; --accent-hover:#BEF264; --accent-text:#0A0A0A;
+    --success:#22C55E; --warning:#F59E0B; --error:#EF4444;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg-primary);color:var(--text-primary);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Space Grotesk',sans-serif;letter-spacing:-0.03em;line-height:1.1;color:var(--text-primary)}
+  a{color:inherit;text-decoration:none;transition:color .2s}
+  img{max-width:100%;display:block}
+  .container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+  :focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 3px;
+  }
+
+  ::selection {
+    background: rgba(163,230,53,0.3);
+    color: white;
+  }
+
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0A0A0A; }
+  ::-webkit-scrollbar-thumb { background: #262626; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #A3E635; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* ===== FUTURISTIC ANIMATIONS ===== */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) translateX(0px) scale(1); }
+    33% { transform: translateY(-30px) translateX(15px) scale(1.05); }
+    66% { transform: translateY(-15px) translateX(-10px) scale(1.02); }
+  }
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px rgba(163,230,53,.2); }
+    50% { box-shadow: 0 0 40px rgba(163,230,53,.5); }
+  }
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  @keyframes badge-pulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(163,230,53,0.3); }
+    50% { box-shadow: 0 0 40px rgba(163,230,53,0.6); }
+  }
+  @keyframes scroll-indicator {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(8px); opacity: 0.5; }
+  }
+
+  /* ===== FLOATING ORBS ===== */
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    pointer-events: none;
+    animation: float 12s ease-in-out infinite;
+  }
+  .orb-1 { width: 500px; height: 500px; background: #A3E635; top: -10%; left: -10%; animation-delay: 0s; }
+  .orb-2 { width: 400px; height: 400px; background: #8B5CF6; bottom: -10%; right: -10%; animation-delay: -4s; }
+  .orb-3 { width: 300px; height: 300px; background: #06B6D4; top: 40%; right: 20%; animation-delay: -8s; }
+  .orb-4 { width: 350px; height: 350px; background: #A3E635; top: 10%; right: -10%; animation-delay: -2s; }
+  .orb-5 { width: 400px; height: 400px; background: #06B6D4; bottom: -10%; right: -5%; animation-delay: -6s; }
+  .orb-6 { width: 500px; height: 500px; background: #A3E635; top: 50%; left: 50%; transform: translate(-50%,-50%); animation-delay: 0s; }
+  .orb-7 { width: 300px; height: 300px; background: #8B5CF6; bottom: -10%; left: -5%; animation-delay: -3s; }
+
+  /* ===== GRID BACKGROUND ===== */
+  .grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(163,230,53,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(163,230,53,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+    pointer-events: none;
+  }
+
+  /* ===== BUTTONS ===== */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:12px;font-weight:600;font-size:15px;font-family:'Inter',sans-serif;cursor:pointer;border:none;transition:all .3s cubic-bezier(.25,.46,.45,.94);position:relative;overflow:hidden}
+  .btn-primary{background:var(--accent-primary);color:var(--accent-text)!important;box-shadow:0 0 20px rgba(163,230,53,.15)}
+  .btn-primary:hover{background:var(--accent-hover);color:var(--accent-text)!important;transform:translateY(-2px);box-shadow:0 0 40px rgba(163,230,53,.4)}
+  .btn-primary::after{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);animation:shimmer 3s infinite}
+  .btn-ghost{background:transparent;color:var(--text-primary);border:1px solid rgba(255,255,255,0.1)}
+  .btn-ghost:hover{border-color:rgba(255,255,255,0.3);background:rgba(255,255,255,0.05);transform:translateY(-2px)}
+  .btn-lg{padding:16px 32px;font-size:16px;border-radius:14px}
+  .btn-primary-pulse{animation:pulse-glow 2.5s ease-in-out infinite}
+
+  /* ===== NAVIGATION ===== */
+  .nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s ease;background:transparent}
+  .nav.scrolled{background:rgba(10,10,10,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid var(--border-default)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo-icon{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#A3E635,#65A30D);display:flex;align-items:center;justify-content:center}
+  .logo-icon svg{width:16px;height:16px;fill:#000}
+  .logo-text{font-family:'Space Grotesk';font-weight:700;font-size:20px;color:white}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{color:var(--text-secondary);font-size:14px;font-weight:500;transition:all .2s}
+  .nav-links a:hover{color:var(--text-primary);transform:translateY(-1px)}
+  .menu-toggle{display:none;background:none;border:none;color:var(--text-primary);font-size:26px;cursor:pointer;line-height:1}
+  @media(max-width:900px){
+    .menu-toggle{display:block}
+    .nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:rgba(18,18,18,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-default);flex-direction:column;align-items:stretch;padding:16px 24px;gap:4px}
+    .nav-links a{padding:12px 0;font-size:16px}
+    .nav.open .nav-links{display:flex}
+  }
+
+  /* ===== HERO ===== */
+  .hero{position:relative;padding:170px 0 100px;overflow:hidden;min-height:100vh;display:flex;align-items:center}
+  .hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(163,230,53,.08),transparent 55%);pointer-events:none}
+  .hero-inner{position:relative;z-index:2;text-align:center;max-width:900px;margin:0 auto}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:100px;background:rgba(163,230,53,.08);border:1px solid rgba(163,230,53,.2);color:var(--accent-primary);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:32px;backdrop-filter:blur(8px)}
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--success);box-shadow:0 0 8px var(--success);animation:pulse-glow 2s infinite}
+  h1{font-size:clamp(40px,6vw,72px);margin-bottom:24px;line-height:1.05}
+  h1 .gradient-text{background:linear-gradient(90deg,#A3E635,#65A30D,#A3E635);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:gradient-shift 5s linear infinite}
+  .hero p.hero-desc{font-size:clamp(16px,1.5vw,19px);color:var(--text-secondary);max-width:640px;margin:0 auto 40px;line-height:1.7}
+
+  .hero-stats{display:flex;gap:40px;justify-content:center;margin:40px 0 24px;flex-wrap:wrap}
+  .hero-stat{text-align:center}
+  .hero-stat .stat-num{font-family:'Space Grotesk';font-size:40px;font-weight:700;color:var(--accent-primary);line-height:1}
+  .hero-stat .stat-lbl{font-size:12px;color:var(--text-muted);letter-spacing:.05em;text-transform:uppercase;margin-top:8px}
+
+  .hero-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+  .hero-meta{margin-top:60px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-top:40px;border-top:1px solid var(--border-default)}
+  .hero-meta div{display:flex;flex-direction:column;align-items:center;gap:4px}
+  .hero-meta .num{font-family:'Space Grotesk';font-size:22px;font-weight:700}
+  .hero-meta .lbl{font-size:12px;color:var(--text-muted);letter-spacing:.05em;text-transform:uppercase}
+
+  .scroll-indicator{position:absolute;bottom:32px;left:50%;transform:translateX(-50%);animation:scroll-indicator 2s ease-in-out infinite}
+  .scroll-indicator svg{width:24px;height:24px;color:var(--text-muted)}
+
+  /* ===== TRUST STRIP ===== */
+  .trust-strip{background:rgba(18,18,18,.8);border-top:1px solid var(--border-default);border-bottom:1px solid var(--border-default);padding:28px 0;backdrop-filter:blur(8px)}
+  .trust-inner{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;align-items:center;font-size:13.5px;color:var(--text-secondary)}
+  .trust-inner strong{color:var(--text-primary);font-weight:600}
+  .trust-inner .sep{color:var(--accent-primary);font-size:10px;opacity:0.6}
+
+  /* ===== SECTIONS ===== */
+  section{padding:100px 0;position:relative;overflow:hidden}
+  .section-head{text-align:center;max-width:640px;margin:0 auto 64px}
+  .section-head .tag{color:var(--accent-primary);font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px}
+  .section-head h2{font-size:clamp(30px,4vw,44px);margin-bottom:16px}
+  .section-head p{color:var(--text-secondary);font-size:17px}
+
+  /* ===== PORTFOLIO ===== */
+  .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .work{position:relative;aspect-ratio:9/16;border-radius:20px;overflow:hidden;border:1px solid var(--border-default);background:#000;transition:all .4s cubic-bezier(.25,.46,.45,.94)}
+  .work:hover{transform:translateY(-8px) scale(1.02);border-color:rgba(163,230,53,.2);box-shadow:0 30px 60px rgba(0,0,0,.5)}
+  .work-bg{position:absolute;inset:0}
+  .work-bg-1{background:linear-gradient(135deg,rgba(139,92,246,.3),rgba(59,130,246,.2))}
+  .work-bg-2{background:linear-gradient(135deg,rgba(163,230,53,.2),rgba(6,182,212,.2))}
+  .work-bg-3{background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(236,72,153,.2))}
+  .work-overlay{position:absolute;inset:0;background:rgba(10,10,10,.6)}
+  .work-grid{position:absolute;inset:0;opacity:.2;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:20px 20px}
+  .work-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+  .work-play-btn{width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;transition:all .3s}
+  .work:hover .work-play-btn{transform:scale(1.2);background:rgba(163,230,53,.2);border-color:rgba(163,230,53,.4)}
+  .work-play-btn svg{width:24px;height:24px;fill:white;color:white}
+  .work-badge{position:absolute;top:16px;left:16px;z-index:3;background:rgba(10,10,10,.85);backdrop-filter:blur(8px);border:1px solid rgba(163,230,53,0.3);border-radius:10px;padding:6px 12px;display:flex;align-items:center;gap:6px}
+  .work-badge .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--success);box-shadow:0 0 6px var(--success)}
+  .work-badge .badge-text{font-size:11px;font-weight:700;color:var(--accent-primary);letter-spacing:.02em}
+  .work-info{position:absolute;bottom:0;left:0;right:0;padding:20px;z-index:2;background:linear-gradient(0deg, rgba(0,0,0,0.9) 0%, transparent 100%)}
+  .work-cat{font-size:10px;font-weight:700;letter-spacing:.12em;color:var(--accent-primary);text-transform:uppercase;margin-bottom:6px}
+  .work-title{font-family:'Space Grotesk';font-size:15px;font-weight:600}
+  .work:hover .work-info{background:linear-gradient(0deg, rgba(0,0,0,0.95) 0%, rgba(163,230,53,.05) 100%)}
+
+  /* ===== PROCESS ===== */
+  .process{background:rgba(18,18,18,.5);border-top:1px solid var(--border-default);border-bottom:1px solid var(--border-default)}
+  .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;position:relative}
+  .process-line{display:none;position:absolute;top:48px;left:16.66%;right:16.66%;height:1px;background:linear-gradient(90deg,transparent,rgba(163,230,53,.3),transparent)}
+  @media(min-width:960px){.process-line{display:block}}
+  .sys{background:var(--bg-primary);border:1px solid var(--border-default);border-radius:20px;padding:28px 24px;transition:all .3s ease;position:relative;overflow:hidden}
+  .sys:hover{transform:translateY(-5px);border-color:rgba(163,230,53,.2);box-shadow:0 20px 40px rgba(163,230,53,.05)}
+  .sys-icon{width:40px;height:40px;border-radius:12px;background:rgba(163,230,53,.1);border:1px solid rgba(163,230,53,.2);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--accent-primary);transition:all .3s}
+  .sys:hover .sys-icon{background:rgba(163,230,53,.2)}
+  .sys-num{font-family:'Space Grotesk';font-size:13px;font-weight:700;color:var(--accent-primary);margin-bottom:4px}
+  .sys h4{font-size:17px;margin-bottom:8px}
+  .sys p{color:var(--text-secondary);font-size:13.5px;line-height:1.7}
+  .sys::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(163,230,53,.03),transparent);opacity:0;transition:opacity .3s;pointer-events:none}
+  .sys:hover::after{opacity:1}
+
+  /* ===== TESTIMONIALS ===== */
+  .testimonials{background:rgba(18,18,18,.3)}
+  .guarantee-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .testi-card{background:var(--bg-primary);border:1px solid var(--border-default);border-radius:20px;padding:32px;display:flex;flex-direction:column;transition:all .3s ease;position:relative;overflow:hidden}
+  .testi-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.1)}
+  .testi-card::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(163,230,53,.02),transparent);opacity:0;transition:opacity .3s;pointer-events:none}
+  .testi-card:hover::after{opacity:1}
+  .testi-header{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+  .testi-avatar{width:48px;height:48px;border-radius:50%;overflow:hidden;border:2px solid rgba(163,230,53,.5);flex-shrink:0}
+  .testi-avatar img{width:100%;height:100%;object-fit:cover}
+  .testi-info h4{font-size:15px;font-weight:600;color:var(--text-primary);margin-bottom:2px}
+  .testi-info p{font-size:12px;color:var(--text-muted)}
+  .testi-result{display:inline-block;background:rgba(163,230,53,0.1);color:var(--accent-primary);padding:5px 14px;border-radius:100px;font-size:12px;font-weight:700;margin-bottom:16px}
+  .testi-card blockquote{font-size:14.5px;color:var(--text-secondary);line-height:1.7;font-style:italic;flex:1;margin:0}
+  .testi-stars{display:flex;gap:2px;margin-top:16px}
+  .testi-stars svg{width:16px;height:16px;fill:var(--accent-primary);color:var(--accent-primary)}
+
+  /* ===== PRICING ===== */
+  .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+  .plan{background:var(--bg-primary);border:1px solid var(--border-default);border-radius:22px;padding:28px 30px 36px;display:flex;flex-direction:column;transition:all .3s ease;position:relative;overflow:hidden}
+  .plan:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.15)}
+  .plan.featured{border:2px solid rgba(163,230,53,.4);background:linear-gradient(180deg,rgba(163,230,53,.04),var(--bg-primary));transform:scale(1.05);z-index:2;box-shadow:0 20px 60px rgba(163,230,53,.1)}
+  .plan.featured:hover{transform:scale(1.05) translateY(-5px);border-color:rgba(163,230,53,.6)}
+  .plan.featured::before{content:"MOST POPULAR";position:absolute;top:16px;right:16px;background:var(--accent-primary);color:var(--accent-text);padding:6px 14px;border-radius:100px;font-size:10px;font-weight:800;letter-spacing:.05em;z-index:10;animation:badge-pulse 2s ease-in-out infinite}
+  .plan-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;transition:all .3s}
+  .plan-icon.default{background:rgba(255,255,255,.05)}
+  .plan-icon.accent{background:rgba(163,230,53,.15)}
+  .plan-icon svg{width:24px;height:24px}
+  .plan-name{color:var(--text-secondary);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+  .plan-best{color:var(--accent-primary);font-size:12.5px;font-weight:600;margin-bottom:16px}
+  .plan-price{display:flex;align-items:baseline;gap:6px;margin-bottom:4px}
+  .plan-price .amt{font-family:'Space Grotesk';font-size:48px;font-weight:700}
+  .plan-price .per{color:var(--text-muted);font-size:15px}
+  .plan-per-video{font-size:13px;margin-bottom:24px}
+  .plan-per-video.muted{color:var(--text-muted)}
+  .plan-per-video.accent{color:var(--accent-primary);font-weight:600}
+  .plan ul{list-style:none;margin-bottom:28px;flex:1}
+  .plan li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:14.5px;color:var(--text-secondary)}
+  .plan li svg{width:18px;height:18px;color:var(--accent-primary);flex-shrink:0;margin-top:2px}
+  .plan .btn{width:100%;margin-top:auto}
+  .plan-guarantee{font-size:12px;color:var(--text-muted);margin-top:12px;text-align:center}
+  .pricing-notes{max-width:760px;margin:36px auto 0;color:var(--text-muted);font-size:13px;line-height:1.7;text-align:center}
+  .pricing-notes strong{color:var(--text-secondary)}
+
+  /* ===== FAQ ===== */
+  .faq-list{max-width:720px;margin:0 auto}
+  .faq-item{border:1px solid var(--border-default);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:all .3s}
+  .faq-item.open{border-color:rgba(163,230,53,.2);background:rgba(163,230,53,.03)}
+  .faq-q{display:flex;justify-content:space-between;align-items:center;gap:20px;width:100%;background:none;border:none;color:var(--text-primary);font-weight:600;font-size:15px;font-family:'Inter',sans-serif;text-align:left;padding:20px 24px;cursor:pointer}
+  .faq-q .faq-icon{color:var(--accent-primary);font-size:22px;font-weight:400;transition:transform .3s;flex-shrink:0}
+  .faq-item.open .faq-q .faq-icon{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+  .faq-a-inner{padding:0 24px 20px;color:var(--text-secondary);font-size:14.5px;line-height:1.7}
+  .faq-item.open .faq-a{max-height:300px}
+
+  /* ===== CTA BANNER ===== */
+  .cta-banner{background:rgba(18,18,18,.5);border-top:1px solid var(--border-default);border-bottom:1px solid var(--border-default);position:relative;overflow:hidden}
+  .cta-inner{text-align:center;max-width:620px;margin:0 auto;position:relative;z-index:2}
+  .cta-inner h2{font-size:clamp(28px,4vw,44px);margin-bottom:16px}
+  .cta-inner p{color:var(--text-secondary);font-size:17px;margin-bottom:32px}
+
+  /* ===== CONTACT ===== */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+  .contact-info h3{font-size:28px;margin-bottom:16px}
+  .contact-info > p{color:var(--text-secondary);margin-bottom:28px;font-size:16px}
+  .contact-list{list-style:none}
+  .contact-list li{display:flex;gap:14px;align-items:center;padding:12px 0;font-size:14.5px;color:var(--text-secondary)}
+  .contact-list .ic{width:40px;height:40px;border-radius:12px;background:rgba(163,230,53,.1);border:1px solid rgba(163,230,53,.2);color:var(--accent-primary);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .contact-list .ic svg{width:18px;height:18px}
+  .form{background:var(--bg-primary);border:1px solid var(--border-default);border-radius:22px;padding:36px}
+  .field{margin-bottom:18px}
+  .field label{display:block;font-size:13px;font-weight:500;margin-bottom:8px;color:var(--text-secondary)}
+  .field input,.field select,.field textarea{width:100%;background:var(--bg-surface);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px 16px;color:var(--text-primary);font-size:14.5px;font-family:inherit;transition:all .3s}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:rgba(163,230,53,.5);box-shadow:0 0 0 4px rgba(163,230,53,.08)}
+  .field textarea{resize:vertical;min-height:100px}
+  .field input::placeholder,.field textarea::placeholder{color:var(--text-muted)}
+  .form .btn{width:100%;margin-top:8px}
+  .form-status{margin-top:14px;font-size:14px;display:none}
+  .form-status.ok{display:block;color:var(--success)}
+  .form-status.err{display:block;color:var(--error)}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--bg-primary);border-top:1px solid var(--border-default);padding:60px 0 30px}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+  .footer-brand p{color:var(--text-secondary);font-size:14px;margin-top:16px;max-width:320px;line-height:1.7}
+  .footer-col h4{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px;color:var(--text-secondary)}
+  .footer-col a{display:block;color:var(--text-muted);font-size:14px;padding:5px 0;transition:color .2s}
+  .footer-col a:hover{color:var(--accent-primary)}
+  .footer-bottom{padding-top:24px;border-top:1px solid var(--border-default);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;color:var(--text-muted);font-size:13px}
+  .footer-socials{display:flex;gap:16px}
+  .footer-socials a{color:var(--text-muted);font-size:13px;transition:color .2s}
+  .footer-socials a:hover{color:var(--accent-primary)}
+
+  /* ===== SCROLL REVEAL ===== */
+  .reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.25,.46,.45,.94)}
+  .reveal.visible{opacity:1;transform:none}
+  .reveal-delay-1{transition-delay:.1s}
+  .reveal-delay-2{transition-delay:.2s}
+  .reveal-delay-3{transition-delay:.3s}
+  .reveal-delay-4{transition-delay:.4s}
+
+  /* ===== RESPONSIVE ===== */
+  @media(max-width:960px){
+    .portfolio-grid,.pricing-grid{grid-template-columns:repeat(2,1fr)}
+    .process-grid{grid-template-columns:repeat(2,1fr)}
+    .contact-grid{grid-template-columns:1fr;gap:40px}
+    .plan.featured{transform:none}
+    .plan.featured:hover{transform:translateY(-5px)}
+  }
+  @media(max-width:640px){
+    .portfolio-grid,.pricing-grid,.process-grid,.guarantee-grid{grid-template-columns:1fr}
+    .hero{padding:130px 0 70px}
+    section{padding:70px 0}
+    .hero-stats{gap:24px}
+    .hero-stat .stat-num{font-size:32px}
+    .hero-meta{grid-template-columns:repeat(2,1fr);gap:24px}
+    .hero-meta .num{font-size:26px}
+    .trust-inner{flex-direction:column;gap:12px;text-align:center}
+    .trust-inner .sep{display:none}
+    .footer-grid{grid-template-columns:1fr 1fr;gap:32px 24px}
+    .footer-brand{grid-column:1 / -1;text-align:center;margin-bottom:16px}
+    .footer-brand p{max-width:100%;margin:16px auto 0}
+    .footer-col{text-align:center}
+    .footer-bottom{flex-direction:column;text-align:center;gap:16px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo" aria-label="FocalCut home">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <span class="logo-text">FocalCut</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#pricing" class="btn btn-primary" style="padding:10px 20px;font-size:13px;border-radius:10px">Get Started →</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="grid-bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="container hero-inner">
+    <div class="eyebrow reveal"><span class="dot"></span> Accepting new clients for Q4</div>
+    <h1 class="reveal reveal-delay-1">15 Professional Videos in 24 Hours. <span class="gradient-text">Zero Editing Required.</span></h1>
+    <p class="hero-desc reveal reveal-delay-2">Send us your raw footage via Drive or Dropbox. Get ready-to-post, retention-engineered Reels delivered in 24–48 hours. No subscriptions, no hassle.</p>
+
+    <div class="hero-stats reveal reveal-delay-3">
+      <div class="hero-stat">
+        <div class="stat-num" data-count="24" data-suffix="h">0h</div>
+        <div class="stat-lbl">Turnaround</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num" data-count="15" data-suffix="">0</div>
+        <div class="stat-lbl">Videos / Package</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num" data-count="2" data-suffix="">0</div>
+        <div class="stat-lbl">Revision Rounds</div>
+      </div>
+    </div>
+
+    <div class="hero-cta reveal reveal-delay-4">
+      <a href="#pricing" class="btn btn-primary btn-lg btn-primary-pulse">Get Your First Video in 24h →</a>
+      <a href="#work" class="btn btn-ghost btn-lg">See Recent Work</a>
+    </div>
+    <p class="reveal reveal-delay-4" style="margin-top: 20px; font-size: 13px; color: var(--text-muted);">
+      🛡️ <strong style="color: var(--text-secondary);">100% Brief-Match Guarantee:</strong> If your first draft misses the mark, we re-edit it for free.
+    </p>
+    <div class="hero-meta reveal">
+      <div><span class="num">15</span><span class="lbl">Videos / flagship package</span></div>
+      <div><span class="num">24–48h</span><span class="lbl">First-draft turnaround</span></div>
+      <div><span class="num">2</span><span class="lbl">Revision rounds (Growth)</span></div>
+      <div><span class="num">1-on-1</span><span class="lbl">Human communication</span></div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+  </div>
+</section>
+
+<!-- ===== TRUST STRIP ===== -->
+<div class="trust-strip">
+  <div class="container trust-inner">
+    <span><strong>Built for</strong> TikTok • Instagram Reels • YouTube Shorts</span>
+    <span class="sep">•</span><span>No long-term contracts</span>
+    <span class="sep">•</span><span>Clear revision policy</span>
+    <span class="sep">•</span><span>Secure Stripe checkout</span>
+    <span class="sep">•</span><span>Worldwide remote delivery</span>
+  </div>
+</div>
+
+<!-- ===== PORTFOLIO ===== -->
+<section class="portfolio" id="work">
+  <div class="orb orb-4"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Selected Work</div>
+      <h2>Recent edits, before → after</h2>
+      <p>Real projects from our editing pipeline. Click play to see the retention hooks in action.</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="work reveal reveal-delay-1">
+        <div class="work-bg work-bg-1"></div>
+        <div class="work-overlay"></div>
+        <div class="work-grid"></div>
+        <div class="work-badge"><span class="badge-dot"></span><span class="badge-text">1.2M Views</span></div>
+        <div class="work-play"><div class="work-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="work-info"><div class="work-cat">Business Coach</div><div class="work-title">Talking-head hook restructure</div></div>
+      </div>
+      <div class="work reveal reveal-delay-2">
+        <div class="work-bg work-bg-2"></div>
+        <div class="work-overlay"></div>
+        <div class="work-grid"></div>
+        <div class="work-badge"><span class="badge-dot"></span><span class="badge-text">3x Retention</span></div>
+        <div class="work-play"><div class="work-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="work-info"><div class="work-cat">Fitness Brand</div><div class="work-title">Seamless loop transition edit</div></div>
+      </div>
+      <div class="work reveal reveal-delay-3">
+        <div class="work-bg work-bg-3"></div>
+        <div class="work-overlay"></div>
+        <div class="work-grid"></div>
+        <div class="work-badge"><span class="badge-dot"></span><span class="badge-text">840K Views</span></div>
+        <div class="work-play"><div class="work-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+        <div class="work-info"><div class="work-cat">E-commerce</div><div class="work-title">Product showcase reel</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="process" id="process">
+  <div class="orb orb-5"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">How It Works</div>
+      <h2>From Raw Footage to Posted in 3 Steps</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-line"></div>
+      <div class="sys reveal reveal-delay-1">
+        <div class="sys-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="sys-num">01</div>
+        <h4>Send Footage</h4>
+        <p>Upload your raw clips to Drive or Dropbox and paste the link in your portal. No file size limits.</p>
+      </div>
+      <div class="sys reveal reveal-delay-2">
+        <div class="sys-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.912 5.813a2 2 0 001.275 1.275L21 12l-5.813 1.912a2 2 0 00-1.275 1.275L12 21l-1.912-5.813a2 2 0 00-1.275-1.275L3 12l5.813-1.912a2 2 0 001.275-1.275L12 3z"/></svg>
+        </div>
+        <div class="sys-num">02</div>
+        <h4>We Edit</h4>
+        <p>We apply our retention system (hooks, captions, sound) and deliver a draft in 24-48 hours.</p>
+      </div>
+      <div class="sys reveal reveal-delay-3">
+        <div class="sys-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <div class="sys-num">03</div>
+        <h4>Approve & Post</h4>
+        <p>Review the video in your portal. Request revisions if needed, or approve and download.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="testimonials">
+  <div class="orb orb-7"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Client Results</div>
+      <h2>Edits that actually perform</h2>
+      <p>Real results from creators who trust FocalCut with their content.</p>
+    </div>
+    <div class="guarantee-grid">
+      <div class="testi-card reveal reveal-delay-1">
+        <div class="testi-header">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah K.">
+          </div>
+          <div class="testi-info">
+            <h4>Sarah K.</h4>
+            <p>Fitness Creator · 240K followers</p>
+          </div>
+        </div>
+        <div class="testi-result">📈 1.2M Views on TikTok</div>
+        <blockquote>"We took a raw, 20-minute podcast and FocalCut turned it into 5 Reels. One of them hit 1.2 million views within a week. The hook restructuring is real."</blockquote>
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-2">
+        <div class="testi-header">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Marcus R.">
+          </div>
+          <div class="testi-info">
+            <h4>Marcus R.</h4>
+            <p>Business Coach · 85K followers</p>
+          </div>
+        </div>
+        <div class="testi-result">⏱️ 10 Hours Saved Weekly</div>
+        <blockquote>"I used to spend every Sunday trying to edit my own videos. FocalCut's portal makes it so easy — I just dump my Drive link and get them back on Tuesday. Absolute game changer."</blockquote>
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+      </div>
+
+      <div class="testi-card reveal reveal-delay-3">
+        <div class="testi-header">
+          <div class="testi-avatar">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="James T.">
+          </div>
+          <div class="testi-info">
+            <h4>James T.</h4>
+            <p>Real Estate Agent · 42K followers</p>
+          </div>
+        </div>
+        <div class="testi-result">🎯 3x Average View Duration</div>
+        <blockquote>"My average view duration went from 4 seconds to 12 seconds after switching to FocalCut. They don't just cut clips — they engineer them to keep people watching."</blockquote>
+        <div class="testi-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRICING ===== -->
+<section class="pricing" id="pricing">
+  <div class="orb orb-6"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">Pricing</div>
+      <h2>Simple. Flat. One-time.</h2>
+      <p>No subscriptions. Buy a bundle of video credits and submit footage whenever you're ready.</p>
+    </div>
+    <div class="pricing-grid">
+      <!-- Starter -->
+      <div class="plan reveal reveal-delay-1">
+        <div class="plan-icon default">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <div class="plan-name">The Starter</div>
+        <div class="plan-best">Best for: Getting Noticed</div>
+        <div class="plan-price"><span class="amt">$149</span><span class="per">one-time</span></div>
+        <div class="plan-per-video muted">approx. $37.25 per video</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>4 short-form videos (15–30s each)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Essential captions & hook optimization</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>48-hour first-draft turnaround</li>
+        </ul>
+        <a href="https://buy.stripe.com/9B65kv1RNgAsdmR4UZaMU03" class="btn btn-ghost">Get The Starter</a>
+      </div>
+
+      <!-- Consistency Builder -->
+      <div class="plan reveal reveal-delay-2">
+        <div class="plan-icon default">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#737373" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="plan-name">Consistency Builder</div>
+        <div class="plan-best">Best for: Weekly posters</div>
+        <div class="plan-price"><span class="amt">$299</span><span class="per">one-time</span></div>
+        <div class="plan-per-video muted">approx. $29.90 per video</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>10 short-form videos (15–30s each)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Advanced hook, pacing & retention editing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>48-hour turnaround + 1 revision/video</li>
+        </ul>
+        <a href="https://buy.stripe.com/4gM7sDcwrdogdmR3QVaMU00" class="btn btn-ghost">Get Consistency Builder</a>
+      </div>
+
+      <!-- Growth Engine -->
+      <div class="plan featured reveal reveal-delay-3">
+        <div class="plan-icon accent">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#A3E635" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="plan-name">The Growth Engine</div>
+        <div class="plan-best">Most Popular · Best Value</div>
+        <div class="plan-price"><span class="amt">$399</span><span class="per">one-time</span></div>
+        <div class="plan-per-video accent">only $26.60 per video</div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>15 short-form videos (15–30s each)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Custom brand styling & sound design</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>24-hour turnaround + 2 revisions/video</li>
+        </ul>
+        <a href="https://buy.stripe.com/cNiaEP7c7dogbeJfzDaMU04" class="btn btn-primary btn-primary-pulse">Get The Growth Engine</a>
+        <p class="plan-guarantee">🛡️ Protected by Brief-Match Guarantee</p>
+      </div>
+    </div>
+    <p class="pricing-notes reveal">
+      Turnaround is measured from receipt of complete footage, instructions and references, to delivery of the <strong>first draft</strong>.<br>
+      A revision = changes to an existing edit based on the original brief. New concepts, new footage or a different creative direction are treated as new edits.<br>
+      Unused videos remain on your account. Reorder any package at any time.
+    </p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="tag">FAQ</div>
+      <h2>Questions, answered</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal reveal-delay-1"><button class="faq-q" aria-expanded="false">How do I send my raw footage?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">After purchase you receive a private dashboard link. You paste a Google Drive, Dropbox or Frame.io link for your footage — you never upload large files to our website.</div></div></div>
+      <div class="faq-item reveal reveal-delay-2"><button class="faq-q" aria-expanded="false">Is this a monthly subscription?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">No. Every package is a one-time purchase of video credits. Use them at your own pace and reorder only when you need more.</div></div></div>
+      <div class="faq-item reveal reveal-delay-3"><button class="faq-q" aria-expanded="false">What does "24–48h turnaround" mean exactly?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">It is the time from receiving complete footage, instructions and references to delivery of your first draft. Growth Engine drafts arrive within 24 hours; Starter and Consistency Builder within 48 hours.</div></div></div>
+      <div class="faq-item reveal reveal-delay-4"><button class="faq-q" aria-expanded="false">What counts as a revision?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">A revision is a change to an existing edit based on your original brief (pacing, caption tweaks, music swap, trim). A new concept, new footage or a different creative direction is treated as a new edit.</div></div></div>
+      <div class="faq-item reveal reveal-delay-4"><button class="faq-q" aria-expanded="false">I bought 10 videos but only have footage for 1. Is that okay?<span class="faq-icon">+</span></button><div class="faq-a"><div class="faq-a-inner">Completely. Submit one project now; your remaining credits stay on your account dashboard and you can submit the rest whenever you're ready.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <div class="orb orb-6"></div>
+  <div class="container cta-inner reveal">
+    <h2>Ready to stop scrolling and start growing?</h2>
+    <p>Secure your package today. First drafts back in 24–48 hours.</p>
+    <a href="#pricing" class="btn btn-primary btn-lg btn-primary-pulse">Get Your First Video in 24h →</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="orb orb-7"></div>
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="tag" style="color:var(--accent-primary);font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;margin-bottom:16px">Get In Touch</div>
+        <h3>Questions before you buy?</h3>
+        <p>Tell us about your channel and goals. We reply within 24 hours with an honest recommendation.</p>
+        <ul class="contact-list">
+          <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span> hello@focalcut.com</li>
+          <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span> Reply within 24 hours</li>
+          <li><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></span> Remote · Worldwide clients</li>
+        </ul>
+      </div>
+      <form class="form reveal reveal-delay-2" id="contactForm">
+        <div class="field"><label for="c-name">Your name</label><input id="c-name" type="text" name="name" placeholder="Jane Doe" required></div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" type="email" name="email" placeholder="jane@brand.com" required></div>
+        <div class="field"><label for="c-need">What do you need?</label>
+          <select id="c-need" name="creator_type">
+            <option>Video Editing Package</option><option>Custom Quote</option><option>General Question</option>
+          </select>
+        </div>
+        <div class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" placeholder="Tell us about your project..." required></textarea></div>
+        <button type="submit" class="btn btn-primary btn-lg" id="contactBtn">Send Message →</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+          <span class="logo-text">FocalCut</span>
+        </a>
+        <p>Premium short-form video editing for creators and brands who refuse to compromise on retention.</p>
+      </div>
+      <div class="footer-col"><h4>Product</h4><a href="#work">Portfolio</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="#contact">Contact</a><a href="#">Client Portal</a></div>
+      <div class="footer-col"><h4>Legal</h4><a href="#">Terms of Service</a><a href="#">Privacy Policy</a><a href="#">Refund Policy</a></div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Big Bay Mall LLC · FocalCut is a brand of Big Bay Mall LLC · Registered in Wyoming, USA</div>
+      <div class="footer-socials">
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ===== NAV SCROLL EFFECT =====
+  const nav = document.getElementById('nav');
+  const toggle = document.getElementById('menuToggle');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+    toggle.textContent = open ? '×' : '☰';
+  });
+
+  document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = '☰';
+  }));
+
+  // ===== FAQ ACCORDION =====
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const isOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      document.querySelectorAll('.faq-q').forEach(b => b.setAttribute('aria-expanded', 'false'));
+      // Open clicked if was closed
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // ===== SCROLL REVEAL =====
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // ===== ANIMATED COUNTERS =====
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        let current = 0;
+        const duration = 2000;
+        const increment = target / (duration / 16);
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = Math.floor(current) + suffix;
+        }, 16);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(el));
+
+  // ===== CONTACT FORM =====
+  const API_URL = 'https://script.google.com/macros/s/AKfycbzE6iO5bhMklzklFHFnW_HXmhLem4XHMELHbLmlxMuTuUSWuKAfdkkm4Q5OM-fHEnPXDA/exec';
+  document.getElementById('contactForm').addEventListener('submit', async e => {
+    e.preventDefault();
+    const btn = document.getElementById('contactBtn');
+    const status = document.getElementById('formStatus');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    const payload = {
+      action: 'contact',
+      name: e.target.name.value,
+      email: e.target.email.value,
+      package: e.target.creator_type.value,
+      message: e.target.message.value
+    };
+    try {
+      await fetch(API_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      });
+      status.className = 'form-status ok';
+      status.textContent = '✓ Message sent. We reply within 24 hours.';
+      e.target.reset();
+    } catch (err) {
+      status.className = 'form-status err';
+      status.textContent = 'Something went wrong. Please email hello@focalcut.com directly.';
+    }
+    btn.disabled = false;
+    btn.textContent = 'Send Message →';
+  });
+
+  // ===== PARALLAX ORBS ON MOUSE MOVE =====
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 20;
+    const y = (e.clientY / window.innerHeight - 0.5) * 20;
+    document.querySelectorAll('.orb').forEach((orb, i) => {
+      const speed = (i + 1) * 0.3;
+      orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+    });
+  });
+</script>
+</body>
+</html>
